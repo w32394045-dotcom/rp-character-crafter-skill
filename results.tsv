@@ -5,3 +5,6 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-07-10T16:15	r3	rp-character-crafter	85.6	88.9	keep	dim5+dim2+dim6	JSON格式V1/V2/V3完整规格+三版本输出示例+决策树+V3/CHARX打包说明+模板同步	dry_run
 2026-07-11T10:10	r4	rp-character-crafter	88.9	92.0	keep	dim2+dim3+dim5+dim8	强制COT全面追问+主动询问规则+回复格式强制JSON嵌入+Step5反馈迭代+模式B主动采样+偏见补偿	dry_run
 2026-07-11T10:15	r5	rp-character-crafter	92.0	93.8	keep	dim7+dim4	添加TOC目录+最终CHECKPOINT移至Step5末尾+CHECKPOINT新增格式嵌入核对项	dry_run
+2026-07-11T10:31	b7bc24b	rp-character-crafter	81.4	82.2	keep	dim6	修复断链：templates/tsundere-example.json不存在→改为引用sample-character.json	dry_run
+2026-07-11T10:33	5311e69	rp-character-crafter	82.2	84.6	keep	dim3	添加Step2/3/5/模式B三段式失败模式表x4，升级Step5为三段式	dry_run
+2026-07-11T10:34	93a7fa6	rp-character-crafter	84.6	85.2	keep	dim4	添加Step3分层构建CHECKPOINT+Step4格式输出CHECKPOINT	dry_run
