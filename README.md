@@ -6,6 +6,14 @@
 
 [中文文档](README_CN.md)
 
+<div align="center">
+
+[![npm version](https://img.shields.io/npm/v/rp-character-crafter-skill?color=cb3837&style=flat-square)](https://www.npmjs.com/package/rp-character-crafter-skill)
+[![GitHub stars](https://img.shields.io/github/stars/w32394045-dotcom/rp-character-crafter-skill?style=flat-square)](https://github.com/w32394045-dotcom/rp-character-crafter-skill)
+[![License](https://img.shields.io/github/license/w32394045-dotcom/rp-character-crafter-skill?style=flat-square)](https://github.com/w32394045-dotcom/rp-character-crafter-skill/blob/main/LICENSE)
+
+</div>
+
 ## Overview
 
 A full-featured Agent Skill for creating SillyTavern character cards, world books (Lorebook/CharacterBook), and reverse-engineering characters from chat logs. Built with anti-hallucination guards — when uncertain, it asks instead of making things up.
@@ -22,14 +30,22 @@ A full-featured Agent Skill for creating SillyTavern character cards, world book
 
 ## Installation
 
-### As an Agent Skill
+### via npm (recommended)
+
+```bash
+npm install -g rp-character-crafter-skill
+```
+
+The postinstall script automatically copies SKILL.md and templates to `~/.agents/skills/rp-character-crafter/`.
+
+### via Git
 
 ```bash
 git clone https://github.com/w32394045-dotcom/rp-character-crafter-skill.git \
   ~/.agents/skills/rp-character-crafter
 ```
 
-### Or just grab SKILL.md
+### via curl (SKILL.md only)
 
 ```bash
 mkdir -p ~/.agents/skills/rp-character-crafter

@@ -4,6 +4,16 @@
 >
 > 不是填表，是造人。——每一张角色卡都是一个可以呼吸的灵魂。
 
+[English Documentation](README.md)
+
+<div align="center">
+
+[![npm version](https://img.shields.io/npm/v/rp-character-crafter-skill?color=cb3837&style=flat-square)](https://www.npmjs.com/package/rp-character-crafter-skill)
+[![GitHub stars](https://img.shields.io/github/stars/w32394045-dotcom/rp-character-crafter-skill?style=flat-square)](https://github.com/w32394045-dotcom/rp-character-crafter-skill)
+[![License](https://img.shields.io/github/license/w32394045-dotcom/rp-character-crafter-skill?style=flat-square)](https://github.com/w32394045-dotcom/rp-character-crafter-skill/blob/main/LICENSE)
+
+</div>
+
 ## 功能
 
 | 能力 | 说明 |
@@ -18,15 +28,22 @@
 
 ## 安装
 
-### 作为 Agent Skill 安装
+### 通过 npm 安装（推荐）
 
 ```bash
-# 克隆到 skills 目录
+npm install -g rp-character-crafter-skill
+```
+
+安装后自动将 SKILL.md 和模板文件复制到 `~/.agents/skills/rp-character-crafter/`，重启 AI agent 即可使用。
+
+### 通过 Git 克隆
+
+```bash
 git clone https://github.com/w32394045-dotcom/rp-character-crafter-skill.git \
   ~/.agents/skills/rp-character-crafter
 ```
 
-或直接下载 `SKILL.md`：
+### 仅下载 SKILL.md
 
 ```bash
 mkdir -p ~/.agents/skills/rp-character-crafter
