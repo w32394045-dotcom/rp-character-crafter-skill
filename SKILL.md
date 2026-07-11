@@ -1356,9 +1356,7 @@ AI 根据已知信息制定采样计划：
 输出格式：自然语言 + JSON
 ```
 
-**Step 2**：输出两张卡
-
-详见 [templates/tsundere-example.json](templates/tsundere-example.json)
+**Step 2**：输出两张卡（格式参考 `templates/sample-character.json`）
 
 ### 示例 2：已有详细设定 → 格式转换
 
