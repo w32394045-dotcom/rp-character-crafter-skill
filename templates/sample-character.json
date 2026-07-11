@@ -1,0 +1,20 @@
+{
+  "spec": "chara_card_v2",
+  "spec_version": "2.0",
+  "data": {
+    "name": "角色名",
+    "description": "一句话概括角色，包含核心身份和气质",
+    "personality": "性格的详细描述（50-200字），写角色如何思考、如何感受、如何对待他人。不是形容词堆砌，是可感知的行为模式。",
+    "scenario": "当前场景设定。描述角色和用户在哪里、正在发生什么、两人的关系定位。",
+    "first_mes": "*（带星号的动作描写）* 角色说的第一句话。第一句决定气氛基调。",
+    "mes_example": "<START>\n{{user}}: 用户的第一句话\n角色名: 角色回应，包含动作和语气\n{{user}}: 用户的第二句话\n角色名: 角色的第二回应，展示对话节奏\n<START>\n{{user}}: 另一个场景的用户开场\n角色名: 另一个场景的角色回应",
+    "creator_notes": "创作备注：特殊要求、触发关键词、NSFW限制、行为偏好等",
+    "system_prompt": "",
+    "post_history_instructions": "",
+    "tags": ["标签1", "标签2", "标签3"],
+    "creator": "RP-Character-Crafter",
+    "character_version": "1.0",
+    "extensions": {},
+    "alternate_greetings": []
+  }
+}

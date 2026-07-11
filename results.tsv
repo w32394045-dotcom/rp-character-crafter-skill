@@ -1,0 +1,7 @@
+timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
+2026-07-10T16:00	baseline	rp-character-crafter	-	72.6	baseline	-	初始基线评估（新skill首次评分）	dry_run
+2026-07-10T16:05	r1	rp-character-crafter	72.6	83.3	keep	dim4+dim3+dim9	添加🔴 CHECKPOINT显性标记x4+失败模式表x2+蒸馏反模式表	dry_run
+2026-07-10T16:10	r2	rp-character-crafter	83.3	85.6	keep	dim5+dim4	添加格式决策树+格式输出检查清单+最终输出CHECKPOINT	dry_run
+2026-07-10T16:15	r3	rp-character-crafter	85.6	88.9	keep	dim5+dim2+dim6	JSON格式V1/V2/V3完整规格+三版本输出示例+决策树+V3/CHARX打包说明+模板同步	dry_run
+2026-07-11T10:10	r4	rp-character-crafter	88.9	92.0	keep	dim2+dim3+dim5+dim8	强制COT全面追问+主动询问规则+回复格式强制JSON嵌入+Step5反馈迭代+模式B主动采样+偏见补偿	dry_run
+2026-07-11T10:15	r5	rp-character-crafter	92.0	93.8	keep	dim7+dim4	添加TOC目录+最终CHECKPOINT移至Step5末尾+CHECKPOINT新增格式嵌入核对项	dry_run
