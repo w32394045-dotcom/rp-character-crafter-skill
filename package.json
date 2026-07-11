@@ -1,0 +1,41 @@
+{
+  "name": "rp-character-crafter-skill",
+  "version": "1.0.0",
+  "description": "SillyTavern immersive RP character card crafting & reverse distillation Agent Skill — COT requirement gathering, 3-layer character build, V1/V2/V3 JSON output, Mode A/B chat distillation, Lorebook world book",
+  "keywords": [
+    "agent-skill",
+    "sillytavern",
+    "character-card",
+    "roleplay",
+    "rp",
+    "lorebook",
+    "world-book",
+    "distillation",
+    "character-creation",
+    "claude-code-skill",
+    "deepcode-skill",
+    "openclaw-skill"
+  ],
+  "homepage": "https://github.com/w32394045-dotcom/rp-character-crafter-skill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w32394045-dotcom/rp-character-crafter-skill.git"
+  },
+  "license": "MIT",
+  "author": "w32394045-dotcom",
+  "type": "module",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "README_CN.md",
+    "templates/",
+    "scripts/install-skill.mjs"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/install-skill.mjs",
+    "postversion": "git push && git push --tags"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
