@@ -8,3 +8,4 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 2026-07-11T10:31	b7bc24b	rp-character-crafter	81.4	82.2	keep	dim6	修复断链：templates/tsundere-example.json不存在→改为引用sample-character.json	dry_run
 2026-07-11T10:33	5311e69	rp-character-crafter	82.2	84.6	keep	dim3	添加Step2/3/5/模式B三段式失败模式表x4，升级Step5为三段式	dry_run
 2026-07-11T10:34	93a7fa6	rp-character-crafter	84.6	85.2	keep	dim4	添加Step3分层构建CHECKPOINT+Step4格式输出CHECKPOINT	dry_run
+2026-07-11T10:37	440acc4	rp-character-crafter	85.2	86.4	keep	dim7	添加⚡快速开始TL;DR精炼工作流摘要（提升1440行skill可导航性）	dry_run
