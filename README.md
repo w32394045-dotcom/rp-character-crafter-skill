@@ -1,6 +1,6 @@
 # RP Character Crafter
 
-> **Immersive character card crafting + reverse distillation Agent Skill for SillyTavern**
+> **Immersive character card crafting + reverse distillation + subtitle extraction + evolutionary iteration Agent Skill for SillyTavern**
 >
 > Not filling forms — creating souls. Every character card is a breathing personality.
 
@@ -14,19 +14,23 @@
 
 </div>
 
-## Overview
-
-A full-featured Agent Skill for creating SillyTavern character cards, world books (Lorebook/CharacterBook), and reverse-engineering characters from chat logs. Built with anti-hallucination guards — when uncertain, it asks instead of making things up.
+## Capabilities
 
 | Capability | Description |
 |---|---|
-| **Character Card Creation** | COT requirement gathering → Character Core → 3-layer build (Surface/Middle/Deep) → Multi-format output |
+| **Character Card Creation** | COT requirement gathering → 10-question Character Core + psychological defense mechanisms → 3-layer build → Multi-format output |
 | **Multi-Format Output** | Natural Language / W++ / Boostyle / JSON (V1/V2/V3/CHARX) |
-| **Reverse Distillation A** | Extract personality from existing chat logs → reconstruct full character card |
-| **Reverse Distillation B** | Only have a first message? Design probe conversations, sample responses, then distill |
+| **Reverse Distillation A** | Extract personality from chat logs with D3.5 deep psychological analysis (defense mechanisms / attachment styles / trigger mapping) |
+| **Reverse Distillation B** | Only a first message? Design probe conversations, sample responses, then distill |
+| **Subtitle Distillation C** | Extract characters from .ass/.srt/.ssa subtitle files — 6-dimension analysis + 7-level confidence + subtitle lorebook |
+| **Character Archetype Library** | 12 complete archetype templates (Yandere/Tsundere/Kuudere/Dandere/Devoted/Domineering/Sharp-tongued/Genki/Mysterious/Lazy/Healing Two-faced) |
+| **Evolutionary Iteration** | Darwin-style ratchet optimization — 3 feedback entry modes → 4-phase evolution → keep only improvements |
+| **Reflection Protocol** | Structured self-critique: 30+ interrogation questions + 3 key tests + RLHF compensation + hallucination safety boundaries |
+| **Advanced Techniques** | 8 expert techniques (multi-card synergy / scene anchoring / token budget / character arcs / dialogue rhythm / flaws / first messages / trigger words) |
+| **Troubleshooting** | 6 diagnostic workflows (OOC / card activation / world book / robotic dialogue / format compatibility / distillation accuracy) |
 | **Lorebook / World Book** | Structured CharacterBook entries triggered by keywords |
 | **Reply Format Enforcement** | Parenthesized actions + bare dialogue + 1-3 paragraphs → auto-embedded into JSON fields |
-| **Anti-Hallucination** | Asks user when info is missing. Every distilled trait has a confidence level |
+| **Anti-Hallucination** | Asks user when info is missing. Every distilled trait has a confidence level. Reflection has safety boundaries against drift. |
 
 ## Installation
 
@@ -61,34 +65,46 @@ curl -o ~/.agents/skills/rp-character-crafter/SKILL.md \
 
 ## Quick Start
 
-**Trigger keywords:** `写个角色卡` `create a character card` `lorebook` `world book` `distill` `reverse engineer` `SillyTavern` `character setting`
+**Trigger keywords:** `create a character card` `lorebook` `world book` `distill` `reverse engineer` `SillyTavern` `character setting` `subtitle` `.ass` `.srt` `.ssa` `anime character` `optimize character` `iterate` `reflect`
 
-### Two core workflows
+### Three core workflows
 
 | Scenario | Flow |
 |---|---|
-| Create a new character | Step 1 COT questioning → Step 2 Character Core (5 questions) → Step 3 3-layer build → Step 4 Format output → Step 5 Feedback iteration |
-| Reverse distill from chats | Have logs → Mode A distill / Only first message → Mode B probe sampling → Output + confidence report |
+| Create a new character | Step 1 COT → Step 2 Core (10 questions + defense mechanisms) → Step 3 Layer build → Step 4 Format → Step 5 Iterate |
+| Distill from data | Chat logs → Mode A / Subtitles → Mode C / First message only → Mode B probe sampling |
+| Optimize existing card | Feedback/chats/subtitles → Darwin ratchet loop (diagnose → fix → verify → keep improvements) + Reflection Protocol |
 
 ### Core rules (not optional)
 
 1. **Ask when unsure** — missing info = must ask (at least 3 questions at once)
-2. **CHECKPOINT before proceeding** — confirm at end of Step 1/2/3/4/5
+2. **CHECKPOINT before proceeding** — confirm at every stage
 3. **Reply format embedded** — `(action) dialogue` format goes into `system_prompt` + `mes_example`
 4. **Never fabricate in distillation** — every trait gets a confidence label
+5. **Subtitle distinction** — separate scripted dialogue from improvisation, mark translation artifacts
 
 ## Full Documentation
 
-See [SKILL.md](SKILL.md) — 1475 lines covering:
+See [SKILL.md](SKILL.md) — 3982 lines covering:
 
-1. Anti-hallucination rules & active questioning protocol
-2. Step 1-5 detailed workflow (COT template, question banks, checkpoints)
-3. Complete format guides (Natural Language, W++, Boostyle, JSON V1/V2/V3 schemas)
-4. Reply format specification & forced embedding positions
-5. Lorebook CharacterBook structure & writing principles
-6. Reverse distillation Mode A/B (bias compensation, triple cross-validation, confidence system)
-7. Character build quality checklist & anti-patterns
-8. Failure mode tables (3-column: trigger → first fix → fallback)
+| Chapter | Content |
+|---------|---------|
+| 1-2 | Anti-hallucination rules + Step 1-5 workflow (COT / 10-question core / defense mechanisms / 3-layer build / CHECKPOINTs) |
+| 3-5 | Complete format guides (V1/V2/V3 JSON schemas) + reply format spec + packaging |
+| 6 | Lorebook CharacterBook structure & writing principles |
+| 7-8 | Depth building templates + quality checklist + anti-patterns |
+| 9 | Reverse distillation Mode A/B (D3.5 psychological analysis: defense mechanisms / attachment styles / trigger mapping / non-verbal cues) |
+| 10 | Creation examples |
+| 11 | **Subtitle Distillation Mode C** (.ass/.srt/.ssa → C2 analysis techniques + full example) |
+| 12 | **Character Archetype Library** (12 archetypes: 5-question core + 3-layer build + sample lines + variants + traps) |
+| 13 | **Advanced Techniques** (multi-card synergy / scene anchoring / token budgets / character arcs / dialogue rhythm / flaws / first messages / trigger words) |
+| 14 | **Troubleshooting** (OOC / card activation / world book / robotic dialogue / format compatibility / distillation accuracy) |
+| 15 | **Evolutionary Iteration** (Darwin ratchet: 3 feedback modes → 4 phases → independent verification → loop exit) |
+| 16 | **Reflection Protocol** (30+ interrogation questions → 3 key tests → RLHF compensation → hallucination safety boundaries → drift detection) |
+
+## Darwin Baseline Score: 87/100
+
+Evaluated with Darwin Skill 2.0 9-dimension rubric. Runtime neutrality: PASS (0 red flags).
 
 ## License
 
